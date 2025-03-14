@@ -29,31 +29,33 @@
             <div class="col-span-1 text-center">
                 FOLLOW US
                 <div class="mt-2 flex flex-row justify-center gap-x-4">
-                    <a href="" class="w-1/4">
-                        <img src="/assets/images/icons/icon-instagram.png" alt="" class="w-6 mx-auto">
-                    </a>
-                    <a href="" class="w-1/4">
-                        <img src="/assets/images/icons/icon-instagram.png" alt="" class="w-6 mx-auto">
-                    </a>
-                    <a href="" class="w-1/4">
-                        <img src="/assets/images/icons/icon-instagram.png" alt="" class="w-6 mx-auto">
-                    </a>
+                    @foreach($page->socials as $social)
+                        <a href="{{ $social->url }}" class="w-1/4" target="_blank">
+                            <img src="{{ $social->icon }}" alt="{{ $social->title }}"
+                                 class="w-6 mx-auto">
+                        </a>
+                    @endforeach
                 </div>
             </div>
             <div class="col-span-1 text-center">
                 FIND US
                 <div class="mt-2 flex flex-row justify-center gap-x-4">
-                    <a href="" class="w-1/4">
-                        <img src="/assets/images/icons/icon-instagram.png" alt="" class="w-6 mx-auto">
-                    </a>
-                    <a href="" class="w-1/4">
-                        <img src="/assets/images/icons/icon-instagram.png" alt="" class="w-6 mx-auto">
-                    </a>
+                    @foreach($page->marketplaces as $marketplace)
+                        <a href="{{ $marketplace->url }}" class="w-1/4" target="_blank">
+                            <img src="{{ $marketplace->icon }}" alt="{{ $marketplace->title }}"
+                                 class="w-6 mx-auto">
+                        </a>
+                    @endforeach
                 </div>
             </div>
         </div>
     </div>
 </footer>
+<div class="fixed z-30 bottom-20 right-4">
+    <a href="https://wa.me/{{ $page->fab->wa }}" target="_blank">
+        <img src="/assets/images/icons/icon-whatsapp.png" alt="icon whatsapp" class="w-12">
+    </a>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
 <script>
