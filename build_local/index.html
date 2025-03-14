@@ -8,7 +8,7 @@
     <title>Jigsaw</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.2.4/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
-    <link rel="stylesheet" href="/assets/build/css/main.css?id=d26623987e996803d2de2174109701c3">
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=71bd05462403d9826db02068f7495e08">
     </head>
 <body class="antialiased font-gotham-rounded text-body">
 <header class="rounded-b-3xl bg-primary fixed top-0 z-20 w-full">
@@ -36,7 +36,8 @@
             </div>
         </div>
     </section>
-    <div style="background: url(/assets/images/bg-ripple.png) no-repeat center bottom;background-size: cover" class="pt-10">
+    <div style="background: url(/assets/images/bg-ripple.png) no-repeat center bottom;background-size: cover"
+         class="pt-10">
         <section>
             <div class="container mx-auto px-4 text-center">
                 <h1 class="text-xl font-bold mb-8">
@@ -53,9 +54,48 @@
                     rusak
                     sering ditemui pada kulit:
                 </p>
-                <div>
-                    skin carousel
-                </div>
+            </div>
+            <div class="swiper swiper--zoom" id="skin_swiper">
+                <div class="swiper-wrapper">
+                                            <div class="swiper-slide p-2">
+                            <div class="p-4 bg-gradient-to-b from-blue-100 to-white rounded-xl shadow-md text-center">
+                                <img src="/assets/images/icons/icon-dry-skin.png" alt="Kulit Kering"
+                                     class="size-40 mx-auto mb-4">
+                                <h2 class="text-lg font-bold">
+                                    Kulit Kering
+                                </h2>
+                                <p class="text-base mt-2">
+                                    Kondisi kulit dimana skin barrier mudah rusak karena kondisi eksternal, seperti cuaca dan temperatur yang menjadikan kulit mudah iritasi.
+                                </p>
+                            </div>
+                        </div>
+                                            <div class="swiper-slide p-2">
+                            <div class="p-4 bg-gradient-to-b from-blue-100 to-white rounded-xl shadow-md text-center">
+                                <img src="/assets/images/icons/icon-sensitive-skin.png" alt="Kulit Sensitif"
+                                     class="size-40 mx-auto mb-4">
+                                <h2 class="text-lg font-bold">
+                                    Kulit Sensitif
+                                </h2>
+                                <p class="text-base mt-2">
+                                    Kondisi kulit dimana skin barrier mudah rusak karena paparan alergen, seperti bahan kimia yang ada pada sabun, deterjen, dan lain sebagainya.
+                                </p>
+                            </div>
+                        </div>
+                                            <div class="swiper-slide p-2">
+                            <div class="p-4 bg-gradient-to-b from-blue-100 to-white rounded-xl shadow-md text-center">
+                                <img src="/assets/images/icons/icon-eczema.png" alt="Kulit Rentan Eksim"
+                                     class="size-40 mx-auto mb-4">
+                                <h2 class="text-lg font-bold">
+                                    Kulit Rentan Eksim
+                                </h2>
+                                <p class="text-base mt-2">
+                                    Kondisi kulit dimana skin barrier mudah rusak karena kondisi internal, seperti genetik dan sistem imun yang menjadikan kulit rentan kering dan inflamasi.
+                                </p>
+                            </div>
+                        </div>
+                                    </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
         <section class="mt-12">
@@ -72,7 +112,8 @@
             <img src="/assets/images/product-showcase.png" alt="" class="w-full">
         </section>
     </div>
-    <div style="background: url(/assets/images/bg-ripple.png) no-repeat center bottom;background-size: cover" class="pt-10">
+    <div style="background: url(/assets/images/bg-ripple.png) no-repeat center bottom;background-size: cover"
+         class="pt-10">
         <section>
             <div>
                 showcase carousel
@@ -170,5 +211,22 @@
 <script>
   AOS.init();
 </script>
+    <script>
+      new Swiper('#skin_swiper', {
+        slidesPerView: 1.5,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 20
+          }
+        }
+      });
+    </script>
 </body>
 </html>

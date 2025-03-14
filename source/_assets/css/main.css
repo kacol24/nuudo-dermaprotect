@@ -109,6 +109,19 @@
 }
 
 :root {
-    --color-primary: var(#a2d7f4);
-    --color-body: var(#707579);
+    --color-primary: #a2d7f4;
+    --color-body: #707579;
+}
+
+.swiper {
+    --swiper-theme-color: var(--color-primary);
+}
+
+.swiper--zoom .swiper-slide {
+    transition: transform 200ms;
+    transform: scale(0.7);
+}
+
+.swiper--zoom .swiper-slide.swiper-slide-active {
+    transform: scale(1);
 }

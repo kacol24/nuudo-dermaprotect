@@ -16,7 +16,8 @@
             </div>
         </div>
     </section>
-    <div style="background: url(/assets/images/bg-ripple.png) no-repeat center bottom;background-size: cover" class="pt-10">
+    <div style="background: url(/assets/images/bg-ripple.png) no-repeat center bottom;background-size: cover"
+         class="pt-10">
         <section>
             <div class="container mx-auto px-4 text-center">
                 <h1 class="text-xl font-bold mb-8">
@@ -33,9 +34,26 @@
                     rusak
                     sering ditemui pada kulit:
                 </p>
-                <div>
-                    skin carousel
+            </div>
+            <div class="swiper swiper--zoom" id="skin_swiper">
+                <div class="swiper-wrapper">
+                    @foreach($page->skin_types as $skin)
+                        <div class="swiper-slide p-2">
+                            <div class="p-4 bg-gradient-to-b from-blue-100 to-white rounded-xl shadow-md text-center">
+                                <img src="{{ $skin->image }}" alt="{{ $skin->title }}"
+                                     class="size-40 mx-auto mb-4">
+                                <h2 class="text-lg font-bold">
+                                    {{ $skin->title }}
+                                </h2>
+                                <p class="text-base mt-2">
+                                    {{ $skin->body }}
+                                </p>
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
         <section class="mt-12">
@@ -52,7 +70,8 @@
             <img src="/assets/images/product-showcase.png" alt="" class="w-full">
         </section>
     </div>
-    <div style="background: url(/assets/images/bg-ripple.png) no-repeat center bottom;background-size: cover" class="pt-10">
+    <div style="background: url(/assets/images/bg-ripple.png) no-repeat center bottom;background-size: cover"
+         class="pt-10">
         <section>
             <div>
                 showcase carousel
@@ -105,3 +124,23 @@
         </div>
     </section>
 @endsection
+
+@push('after_scripts')
+    <script>
+      new Swiper('#skin_swiper', {
+        slidesPerView: 1.5,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 20
+          }
+        }
+      });
+    </script>
+@endpush
