@@ -73,23 +73,38 @@
     <div style="background: url(/assets/images/bg-ripple.png) no-repeat center bottom;background-size: cover"
          class="pt-10">
         <section>
-            <div>
-                showcase carousel
-            </div>
-            <div class="mt-8">
-                <div class="container mx-auto px-4">
-                    <div class="rounded-full border-primary border-4 bg-white flex items-center p-2 gap-x-2">
-                        <img src="/assets/images/icons/bulb-icon.png" alt="" class="w-20">
-                        <div class="text-center flex-grow text-xs">
-                            <strong class="block text-base">
-                                TAHUKAH ANDA?
-                            </strong>
-                            Kandungan vegetable glycerin di Nuudo Dermaprotect Gentle Cleanser lebih tinggi dari
-                            kandungan
-                            air
+            <div class="swiper swiper--zoom" id="step_swiper">
+                <div class="swiper-wrapper">
+                    @foreach($page->steps as $step)
+                        <div class="swiper-slide p-2">
+                            <div class="p-6 bg-white rounded-xl text-center">
+                                <h3 class="text-xl font-bold">Step {{ $loop->iteration }}</h3>
+                                <h2 class="text-lg font-bold text-primary uppercase">
+                                    {{ $step->tag }}
+                                </h2>
+                                <div class="relative mt-2">
+                                    <img src="{{ $step->image }}" alt="Gentle Cleanser"
+                                         class="relative w-40 h-auto mx-auto">
+                                </div>
+                                <p class="text-sm mt-2 font-gotham-book">
+                                    {!! nl2br($step->body) !!}
+                                </p>
+                                <div class="rounded-full border-primary border-4 bg-white flex items-center p-2 gap-x-2 mt-4">
+                                    <img src="/assets/images/icons/bulb-icon.png" alt="" class="w-14">
+                                    <div class="text-center flex-grow text-xs">
+                                        <strong class="block text-sm">
+                                            TAHUKAH ANDA?
+                                        </strong>
+                                        {{ $step->faq }}
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
-                    </div>
+                    @endforeach
                 </div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </section>
         <section class="mt-12 pb-8">
@@ -97,18 +112,166 @@
                 Rasakan Kebaikan Nuudo
             </h3>
             <div>
-                testimonial carousel
+                <div class="swiper swiper--zoom" id="testimonial_swiper">
+                    <div class="swiper-wrapper">
+                        @foreach($page->testimonials as $testimony)
+                            <div class="swiper-slide p-2">
+                                <div class="p-2 bg-white rounded-xl shadow-md text-center shadow-lg">
+                                    <img src="{{ $testimony->image }}" alt="{{ $testimony->title }}"
+                                         class="mx-auto mb-4 w-full">
+                                    <h2 class="text-base font-bold text-primary">
+                                        {{ $testimony->title }}
+                                    </h2>
+                                    <p class="text-sm mt-2">
+                                        {!! $testimony->body !!}
+                                    </p>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
             <div class="container mx-auto px-4">
                 <div class="text-center">
                     Nuudo accommodates the needs of all types of skin rom normal, sensitive, dry and atopic skin
                 </div>
             </div>
-            <h3 class="font-bold text-2xl text-center">
+            <h3 class="font-bold text-2xl text-center mt-8">
                 Other Products:
             </h3>
-            <div>
-                other products carousel
+            <div class="mt-4">
+                <div class="swiper swiper--zoom" id="products_swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="border border-black bg-white rounded-xl px-2 py-4 text-center">
+                                <img src="/assets/images/logo-nuudo@2x.png" alt="" class="w-24 mx-auto">
+                                <div class="font-bold my-2">
+                                    for normal to sensitive skin
+                                </div>
+                                <img src="/assets/images/nuudo-10.jpeg" alt="" class="w-full">
+                                <div class="mt-2 flex flex-col">
+                                    <div class="">
+                                        <strong class="block text-nuudo-primary">
+                                            Baby Wash
+                                        </strong>
+                                        <strong class="block text-nuudo-primary">
+                                            Kids Wash
+                                        </strong>
+                                        <strong class="block text-nuudo-primary">
+                                            Body Lotion
+                                        </strong>
+                                    </div>
+                                    <div class="flex flex-row items-center gap-x-2">
+                                        <img src="/assets/images/icons/icon-drop.png" alt="" class="w-14">
+                                        <div class="font-gotham-book text-xs text-left">
+                                            Formulated using blends of plant extract and oil
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="border border-black bg-white rounded-xl px-2 py-4 text-center">
+                                <div class="flex flex-row gap-x-2 items-end justify-center">
+                                    <img src="/assets/images/logo-dermaprotect@2x.png" alt="" class="w-24">
+                                    <div>
+                                        <div class="bg-primary rounded text-white font-bold text-xs px-2 py-1">
+                                            DERMAPROTECT
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="font-bold my-2">
+                                    for sensitive to dry & atopic prone skin
+                                </div>
+                                <img src="/assets/images/nuudo-3.jpeg" alt="" class="w-full">
+                                <div class="mt-2 flex flex-col">
+                                    <div class="">
+                                        <strong class="block text-primary">
+                                            Gentle Cleanser
+                                        </strong>
+                                        <strong class="block text-primary">
+                                            Body & Face Cream
+                                        </strong>
+                                        <strong class="block text-primary">
+                                            Barrier Balm
+                                        </strong>
+                                    </div>
+                                    <div class="flex flex-row items-center gap-x-2">
+                                        <img src="/assets/images/icons/icon-drop.png" alt="" class="w-14">
+                                        <div class="font-gotham-book text-xs text-left">
+                                            Formulated using blends of plant butter and oil
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="border border-black bg-white rounded-xl px-2 py-4 text-center">
+                                <div class="flex flex-row gap-x-2 items-end justify-center">
+                                    <img src="/assets/images/logo-nuudo@2x.png" alt="" class="w-24">
+                                    <div>
+                                        <div class="bg-nuudo-primary rounded text-white font-bold text-xs px-2 py-1">
+                                            HAIR CARE
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="font-bold my-2">
+                                    for baby and kids healthy hair
+                                </div>
+                                <img src="/assets/images/nuudo-23.jpeg" alt="" class="w-full">
+                                <div class="mt-2 flex flex-col">
+                                    <div class="">
+                                        <strong class="block text-nuudo-primary">
+                                            Kids Shampoo
+                                        </strong>
+                                        <strong class="block text-nuudo-primary">
+                                            Hair Lotion
+                                        </strong>
+                                    </div>
+                                    <div class="flex flex-row items-center gap-x-2">
+                                        <img src="/assets/images/icons/icon-drop.png" alt="" class="w-14">
+                                        <div class="font-gotham-book text-xs text-left">
+                                            Formulated using blends of plant extract and oil
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="border border-black bg-white rounded-xl px-2 py-4 text-center">
+                                <div class="flex flex-row gap-x-2 items-end">
+                                    <img src="/assets/images/logo-nuudo@2x.png" alt="" class="w-24 mx-auto">
+                                </div>
+                                <div class="font-bold my-2">
+                                    for irritated skin
+                                </div>
+                                <img src="/assets/images/nuudo-7.jpeg" alt="" class="w-full">
+                                <div class="mt-2 text-xs font-gotham-book">
+                                    Irritated skin can be caused by Wet Rash or Dry Rash
+                                </div>
+                                <div class="mt-2 flex flex-col font-gotham-book text-sm gap-y-2">
+                                    <div>
+                                        <strong class="block text-nuudo-primary">
+                                            Nuudo Rash Cream
+                                        </strong>
+                                        For Wet Rash caused by sweat, such as diaper rash
+                                    </div>
+                                    <div>
+                                        <strong class="block text-primary">
+                                            Nuudo Barrier Balm
+                                        </strong>
+                                        For Dry Rash on dry & atopic skin and other conditions such as sun burn, minor
+                                        burn & minor cut
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </section>
     </div>
@@ -128,6 +291,54 @@
 @push('after_scripts')
     <script>
       new Swiper('#skin_swiper', {
+        slidesPerView: 1.5,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 20
+          }
+        }
+      });
+
+      new Swiper('#step_swiper', {
+        slidesPerView: 1.1,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 20
+          }
+        }
+      });
+
+      new Swiper('#testimonial_swiper', {
+        slidesPerView: 1.5,
+        centeredSlides: true,
+        loop: true,
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+          768: {
+            slidesPerView: 2.5,
+            spaceBetween: 20
+          }
+        }
+      });
+
+      new Swiper('#products_swiper', {
         slidesPerView: 1.5,
         centeredSlides: true,
         loop: true,

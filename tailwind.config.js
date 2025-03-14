@@ -11,6 +11,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#a2d7f4',
+        'nuudo-primary': '#f7931e'
       },
       textColor: {
         body: '#707579',
