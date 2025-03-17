@@ -54,17 +54,17 @@ return [
     
     'testimonials' => [
         [
-            'image' => '/assets/images/testimony-1.jpeg',
+            'image' => '/assets/images/testimony-2.jpeg',
             'title' => 'Mom Yovita Lesmana',
             'body'  => 'Teksturnya ga ganggu, ga ada bau, ga perih kalau ada luka ringan yang butuh langsung dioles. Sangat cocok dimasukkan tas, begitu ada gatal karena serangga, ruam merah, cuaca dingin, <strong>Barrier Balm</strong> bisa jadi pertolongan pertama',
         ],
         [
-            'image' => '/assets/images/testimony-2.jpeg',
+            'image' => '/assets/images/testimony-3.jpeg',
             'title' => 'Mom Nadya Valerie',
             'body'  => 'Pas lagi hamil gede, emang perlu extra care ke kulit. <strong>Nuudo Gentle Cleanser</strong> ini bener-bener padet jadi afternya kulit very hydrated. Pemakaian pertama langsung kerasa bedanya, kulit jadi lembut banget.',
         ],
         [
-            'image' => '/assets/images/testimony-3.jpeg',
+            'image' => '/assets/images/testimony-1.jpeg',
             'title' => 'Mom Vionna Austine',
             'body'  => 'Buat yang punya masalah kulit kering, sensitif, atau dermatitis atopik, harus banget cobain <strong>Nuudo Dermaprotect Series</strong>. Kandungannya semua gentle, tanpa pewangi tambahandan, formulasinya khusus untuk memperbaiki skin barrier & melembabkan kulit yang kering',
         ],
