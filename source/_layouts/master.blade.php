@@ -15,7 +15,7 @@
 <header class="rounded-b-3xl bg-primary fixed top-0 z-20 w-full">
     <div class="container mx-auto px-4">
         <div class="flex py-4 items-center gap-x-4">
-            <img src="/assets/images/logo@2x.png" alt="" class="h-8 md:h-16">
+            <img src="/assets/images/logo@2x.png" alt="" class="h-9 md:h-16">
             <div class="font-bold text-base md:text-2xl">
                 • For sensitive, dry, atopic skin
             </div>
@@ -25,7 +25,7 @@
 @yield('content')
 <footer class="bg-[#9ea4ac] py-8 text-white">
     <div class="container mx-auto px-4">
-        <div class="grid grid-cols-2 gap-x-4 md:grid-cols-4">
+        <div class="grid grid-cols-1 md:gap-x-4 md:grid-cols-4 gap-y-8">
             <div class="col-span-1 text-center md:flex md:flex-row items-center md:gap-x-8">
                 FOLLOW US
                 <div class="mt-2 flex flex-row justify-center gap-x-4 md:mt-0 md:gap-x-8">
@@ -51,7 +51,7 @@
         </div>
     </div>
 </footer>
-<div class="fixed z-30 bottom-20 right-4">
+<div class="fixed z-30 bottom-4 right-4">
     <a href="https://wa.me/{{ $page->fab->wa }}" target="_blank">
         <img src="/assets/images/icons/icon-whatsapp.png" alt="icon whatsapp" class="w-12">
     </a>

@@ -286,9 +286,11 @@
             <img src="/assets/images/all-products.jpeg" alt="" class="w-full">
             <div class="absolute bottom-0 left-0 w-full text-center py-4 md:py-20">
                 <img src="/assets/images/logo-nuudo@2x.png" alt="" class="w-40 mx-auto md:w-60">
-                <h4 class="text-xl mt-2 md:text-5xl font-bold md:mt-8">
-                    Where Natural Goodness Meets Everyday Care
-                </h4>
+                <div class="container mx-auto px-4">
+                    <h4 class="text-xl mt-2 md:text-5xl font-bold md:mt-8">
+                        Where Natural Goodness Meets Everyday Care
+                    </h4>
+                </div>
             </div>
         </div>
     </section>
