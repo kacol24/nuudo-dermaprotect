@@ -85,8 +85,8 @@
                                     {{ $step->tag }}
                                 </h2>
                                 <div class="relative mt-2 md:mt-4">
-                                    <div class="absolute bottom-0 left-0 w-full h-full flex items-center justify-center">
-                                        <img src="{{ $numberIcons[$loop->index] }}" alt="" class="mx-auto w-auto h-full -ml-8 pt-10">
+                                    <div class="absolute bottom-4 left-0 w-full h-full flex items-center justify-center">
+                                        <img src="{{ $numberIcons[$loop->index] }}" alt="" class="mx-auto w-auto h-full -translate-x-24 pt-10">
                                     </div>
                                     <img src="{{ $step->image }}" alt="Gentle Cleanser"
                                          class="relative w-40 h-auto mx-auto">
