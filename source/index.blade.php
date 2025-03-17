@@ -6,9 +6,9 @@
             <img src="/assets/images/hero-banner.jpeg" alt="" class="w-full">
             <div class="absolute top-0 left-0 w-full h-full flex items-center">
                 <div class="container mx-auto px-4">
-                    <h1 class="text-2xl text-white md:text-4xl">
+                    <h1 class="text-2xl text-white md:text-4xl" data-aos="fade-down">
                         3 Langkah Perawatan untuk
-                        <span class="font-bold text-2xl md:text-5xl block"
+                        <span class="font-bold text-2xl md:text-5xl block" data-aos="fade-down" data-aos-delay="100"
                               style="text-shadow: 1px 1px rgba(0, 0, 0, .7);">
                             Kulit Sensitif, Kering & Rentan Eksim
                         </span>
@@ -21,16 +21,17 @@
          class="pt-10">
         <section>
             <div class="container mx-auto px-4 text-center">
-                <h1 class="text-xl font-bold mb-8 md:text-3xl">
+                <h1 class="text-xl font-bold mb-8 md:text-3xl" data-aos="fade-up">
                     Nuudo percaya bahwa tubuh yang sehat dimulai dengan <span
                             class="text-primary">skin barrier yang sehat.</span>
                 </h1>
-                <p class="text-lg mb-4 md:text-2xl">
+                <p class="text-lg mb-4 md:text-2xl" data-aos="fade-up" data-aos-delay="100">
                     Skin barrier adalah lapisan terluar kulit manusia,
                     yang memiliki fungsi utama untuk menjaga kelembapan kulit dan melindungi tubuh dari potensi iritasi.
                 </p>
-                <img src="/assets/images/skin-barrier.png" alt="" class="mx-auto w-40 mb-4">
-                <p class="text-lg mb-4 font-bold md:text-2xl">
+                <img src="/assets/images/skin-barrier.png" alt="" class="mx-auto w-40 mb-4" data-aos="flip-down"
+                     data-aos-delay="200">
+                <p class="text-lg mb-4 font-bold md:text-2xl" data-aos="fade-down" data-aos-delay="300">
                     Pada kondisi kulit normal, skin barrier umumnya tidak mudah rusak. Kondisi skin barrier yang mudah
                     rusak
                     sering ditemui pada kulit:
@@ -40,7 +41,8 @@
                 <div class="swiper-wrapper">
                     @foreach($page->skin_types as $skin)
                         <div class="swiper-slide p-2">
-                            <div class="p-4 bg-gradient-to-b from-blue-100 to-white rounded-xl shadow-md text-center md:py-20">
+                            <div class="p-4 bg-gradient-to-b from-blue-100 to-white rounded-xl shadow-md text-center md:py-20"
+                                 data-aos="fade-left" data-aos-delay="{{ 100 * $loop->index }}">
                                 <img src="{{ $skin->image }}" alt="{{ $skin->title }}"
                                      class="size-40 md:size-60 mx-auto mb-4">
                                 <h2 class="text-lg font-bold md:text-2xl">
@@ -66,7 +68,7 @@
                         <strong>plant butter dan oil.</strong>
                     </h2>
                 </div>
-                <img src="/assets/images/natural-ingredients.png" alt="" class="mx-auto mt-8">
+                <img src="/assets/images/natural-ingredients.png" alt="" class="mx-auto mt-8" data-aos="fade-up">
             </div>
             <img src="/assets/images/product-showcase.png" alt="" class="w-full">
         </section>
@@ -86,7 +88,11 @@
                                 </h2>
                                 <div class="relative mt-2 md:mt-4">
                                     <div class="absolute bottom-4 left-0 w-full h-full flex items-center justify-center">
-                                        <img src="{{ $numberIcons[$loop->index] }}" alt="" class="mx-auto w-auto h-full -translate-x-24 pt-10">
+                                        <div data-aos="fade-left"
+                                             data-aos-delay="{{ 100 * $loop->index }}">
+                                            <img src="{{ $numberIcons[$loop->index] }}" alt=""
+                                                 class="mx-auto w-auto h-full -translate-x-24 pt-10">
+                                        </div>
                                     </div>
                                     <img src="{{ $step->image }}" alt="Gentle Cleanser"
                                          class="relative w-40 h-auto mx-auto">
@@ -94,7 +100,8 @@
                                 <p class="text-sm md:text-base mt-2 md:mt-4 font-gotham-book">
                                     {!! nl2br($step->body) !!}
                                 </p>
-                                <div class="rounded-full border-primary border-4 bg-white flex items-center p-2 gap-x-2 mt-4 md:mt-6">
+                                <div class="rounded-full border-primary border-4 bg-white flex items-center p-2 gap-x-2 mt-4 md:mt-6"
+                                     data-aos="flip-down" data-aos-delay="{{ 100 * $loop->index }}">
                                     <img src="/assets/images/icons/bulb-icon.png" alt="" class="w-20">
                                     <div class="text-center flex-grow text-xs md:text-base">
                                         <strong class="block text-sm md:text-xl">
@@ -113,7 +120,7 @@
             </div>
         </section>
         <section class="mt-12 pb-8 md:mt-20">
-            <h3 class="font-bold text-2xl text-center">
+            <h3 class="font-bold text-2xl text-center" data-aos="fade-down">
                 Rasakan Kebaikan Nuudo
             </h3>
             <div class="md:mt-8">
@@ -285,9 +292,9 @@
         <div class="relative">
             <img src="/assets/images/all-products.jpeg" alt="" class="w-full">
             <div class="absolute bottom-0 left-0 w-full text-center py-4 md:py-20">
-                <img src="/assets/images/logo-nuudo@2x.png" alt="" class="w-40 mx-auto md:w-60">
+                <img src="/assets/images/logo-nuudo@2x.png" alt="" class="w-40 mx-auto md:w-60" data-aos="fade-down">
                 <div class="container mx-auto px-4">
-                    <h4 class="text-xl mt-2 md:text-5xl font-bold md:mt-8">
+                    <h4 class="text-xl mt-2 md:text-5xl font-bold md:mt-8" data-aos="fade-up" data-aos-delay="100">
                         Where Natural Goodness Meets Everyday Care
                     </h4>
                 </div>
