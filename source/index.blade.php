@@ -243,7 +243,8 @@
                         <div class="swiper-slide">
                             <div class="border border-black bg-white rounded-[2rem] px-2 py-4 text-center md:py-10 md:px-4 md:text-left">
                                 <div class="flex flex-row gap-x-2 items-end">
-                                    <img src="/assets/images/logo-nuudo@2x.png" alt="" class="w-24 mx-auto md:mx-0 md:w-40">
+                                    <img src="/assets/images/logo-nuudo@2x.png" alt=""
+                                         class="w-24 mx-auto md:mx-0 md:w-40">
                                 </div>
                                 <div class="font-bold my-2 md:text-xl">
                                     for irritated skin
@@ -301,8 +302,7 @@
         },
         breakpoints: {
           768: {
-            slidesPerView: 2.5,
-            spaceBetween: 20
+            slidesPerView: 2.5
           }
         }
       });
@@ -317,8 +317,7 @@
         },
         breakpoints: {
           768: {
-            slidesPerView: 2.5,
-            spaceBetween: 20
+            slidesPerView: 2.5
           }
         }
       });
@@ -333,8 +332,7 @@
         },
         breakpoints: {
           768: {
-            slidesPerView: 2.5,
-            spaceBetween: 20
+            slidesPerView: 2.5
           }
         }
       });
@@ -349,8 +347,7 @@
         },
         breakpoints: {
           768: {
-            slidesPerView: 2.5,
-            spaceBetween: 20
+            slidesPerView: 2.5
           }
         }
       });
