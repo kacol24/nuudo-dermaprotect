@@ -76,6 +76,7 @@
         <section>
             <div class="swiper swiper--zoom" id="step_swiper">
                 <div class="swiper-wrapper">
+                    @php($numberIcons = ['/assets/images/icons/icon-one.png', '/assets/images/icons/icon-two.png', '/assets/images/icons/icon-three.png'])
                     @foreach($page->steps as $step)
                         <div class="swiper-slide p-2">
                             <div class="p-6 rounded-xl text-center">
@@ -84,6 +85,9 @@
                                     {{ $step->tag }}
                                 </h2>
                                 <div class="relative mt-2 md:mt-4">
+                                    <div class="absolute bottom-0 left-0 w-full h-full flex items-center justify-center">
+                                        <img src="{{ $numberIcons[$loop->index] }}" alt="" class="mx-auto w-auto h-full -ml-8 pt-10">
+                                    </div>
                                     <img src="{{ $step->image }}" alt="Gentle Cleanser"
                                          class="relative w-40 h-auto mx-auto">
                                 </div>
