@@ -74,17 +74,17 @@ return [
         [
             'title' => 'Instagram Nuudo',
             'icon'  => '/assets/images/icons/icon-instagram.png',
-            'url'   => '',
+            'url'   => 'https://www.instagram.com/nuudo.inc/',
         ],
         [
             'title' => 'Tiktok Nuudo',
             'icon'  => '/assets/images/icons/icon-tiktok.png',
-            'url'   => '',
+            'url'   => 'https://www.tiktok.com/@nuudo.inc',
         ],
         [
             'title' => 'YouTube Nuudo',
             'icon'  => '/assets/images/icons/icon-youtube.png',
-            'url'   => '',
+            'url'   => 'https://www.youtube.com/@Nuudo-inc',
         ],
     ],
     
@@ -92,12 +92,12 @@ return [
         [
             'title' => 'Tokopedia Nuudo',
             'icon'  => '/assets/images/icons/icon-tokopedia.png',
-            'url'   => '',
+            'url'   => 'https://www.tokopedia.com/incbrands',
         ],
         [
             'title' => 'Shopee Nuudo',
             'icon'  => '/assets/images/icons/icon-shopee.png',
-            'url'   => '',
+            'url'   => 'https://shopee.co.id/inc.brands',
         ],
     ],
 ];
