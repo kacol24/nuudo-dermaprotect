@@ -135,8 +135,8 @@
                 </div>
             </div>
             <div class="container mx-auto px-4 md:mt-8 md:text-3xl">
-                <div class="text-center">
-                    Nuudo accommodates the needs of all types of skin rom normal, sensitive, dry and atopic skin
+                <div class="text-center max-w-[800px] mx-auto">
+                    Nuudo accommodates the needs of all types of skin from normal, sensitive, dry and atopic skin
                 </div>
             </div>
             <h3 class="font-bold text-2xl text-center mt-8 md:text-5xl">
