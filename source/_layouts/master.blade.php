@@ -65,7 +65,7 @@
 <div class="fixed z-30 bottom-4 right-4">
     <div
             data-aos="zoom-in-left">
-        <a href="https://wa.me/{{ $page->fab->wa }}" target="_blank">
+        <a href="{{ $page->fab->wa }}" target="_blank">
             <img src="/assets/images/icons/icon-whatsapp.png" alt="icon whatsapp" class="w-12">
         </a>
     </div>

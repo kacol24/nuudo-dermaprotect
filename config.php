@@ -8,7 +8,7 @@ return [
     'collections' => [],
     
     'fab' => [
-        'wa' => '',
+        'wa' => 'https://wa.me/6289676717676',
     ],
     
     'skin_types' => [
