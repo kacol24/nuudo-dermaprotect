@@ -8,7 +8,7 @@
     <title>Jigsaw</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.2.5/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
-    <link rel="stylesheet" href="/assets/build/css/main.css?id=3eb0c5cdc0ebf8cb45bf8d23c1714af4">
+    <link rel="stylesheet" href="/assets/build/css/main.css?id=b1dc365940ea637b767d76480dc6c32a">
     </head>
 <body class="antialiased font-gotham-rounded text-body">
 <header class="rounded-b-3xl bg-primary fixed top-0 z-20 w-full">
@@ -74,7 +74,7 @@
                         </div>
                                             <div class="swiper-slide p-2">
                             <div class="p-4 bg-gradient-to-b from-blue-100 to-white rounded-xl shadow-md text-center md:py-20"
-                                 data-aos="fade-left" data-aos-delay="100">
+                                 data-aos="fade-left" data-aos-delay="300">
                                 <img src="/assets/images/icons/icon-sensitive-skin.png" alt="Kulit Sensitif"
                                      class="size-40 md:size-60 mx-auto mb-4">
                                 <h2 class="text-lg font-bold md:text-2xl">
@@ -87,7 +87,7 @@
                         </div>
                                             <div class="swiper-slide p-2">
                             <div class="p-4 bg-gradient-to-b from-blue-100 to-white rounded-xl shadow-md text-center md:py-20"
-                                 data-aos="fade-left" data-aos-delay="200">
+                                 data-aos="fade-left" data-aos-delay="600">
                                 <img src="/assets/images/icons/icon-eczema.png" alt="Kulit Rentan Eksim"
                                      class="size-40 md:size-60 mx-auto mb-4">
                                 <h2 class="text-lg font-bold md:text-2xl">
@@ -114,7 +114,7 @@
                 </div>
                 <img src="/assets/images/natural-ingredients.png" alt="" class="mx-auto mt-8" data-aos="fade-up">
             </div>
-            <img src="/assets/images/product-showcase.png" alt="" class="w-full">
+            <img src="/assets/images/product-showcase.png" alt="" class="w-full" data-aos="fade-down">
         </section>
     </div>
     <div style="background: url(/assets/images/bg-ripple.png) no-repeat center bottom;background-size: cover"
@@ -164,7 +164,7 @@
                                 <div class="relative mt-2 md:mt-4">
                                     <div class="absolute bottom-4 left-0 w-full h-full flex items-center justify-center">
                                         <div data-aos="fade-left"
-                                             data-aos-delay="100">
+                                             data-aos-delay="300">
                                             <img src="/assets/images/icons/icon-two.png" alt=""
                                                  class="mx-auto w-auto h-full -translate-x-24 pt-10">
                                         </div>
@@ -197,7 +197,7 @@
                                 <div class="relative mt-2 md:mt-4">
                                     <div class="absolute bottom-4 left-0 w-full h-full flex items-center justify-center">
                                         <div data-aos="fade-left"
-                                             data-aos-delay="200">
+                                             data-aos-delay="600">
                                             <img src="/assets/images/icons/icon-three.png" alt=""
                                                  class="mx-auto w-auto h-full -translate-x-24 pt-10">
                                         </div>
@@ -434,23 +434,27 @@
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:gap-x-4 md:grid-cols-4 gap-y-8">
             <div class="col-span-1 text-center md:flex md:flex-row items-center md:gap-x-8"
-                 data-aos="fade-up">
+                 data-aos="fade-down"
+                 data-aos-offset="-100">
                 FOLLOW US
                 <div class="mt-2 flex flex-row justify-center gap-x-4 md:mt-0 md:gap-x-8">
                                             <a href="https://www.instagram.com/nuudo.inc/" class="w-6" target="_blank"
                            data-aos="fade-right"
+                           data-aos-offset="-100"
                            data-aos-delay="0">
                             <img src="/assets/images/icons/icon-instagram.png" alt="Instagram Nuudo"
                                  class="w-6 mx-auto">
                         </a>
                                             <a href="https://www.tiktok.com/@nuudo.inc" class="w-6" target="_blank"
                            data-aos="fade-right"
+                           data-aos-offset="-100"
                            data-aos-delay="100">
                             <img src="/assets/images/icons/icon-tiktok.png" alt="Tiktok Nuudo"
                                  class="w-6 mx-auto">
                         </a>
                                             <a href="https://www.youtube.com/@Nuudo-inc" class="w-6" target="_blank"
                            data-aos="fade-right"
+                           data-aos-offset="-100"
                            data-aos-delay="200">
                             <img src="/assets/images/icons/icon-youtube.png" alt="YouTube Nuudo"
                                  class="w-6 mx-auto">
@@ -483,14 +487,19 @@
     </div>
 </footer>
 <div class="fixed z-30 bottom-4 right-4">
-    <a href="https://wa.me/" target="_blank" data-aos="zoom-in-left">
-        <img src="/assets/images/icons/icon-whatsapp.png" alt="icon whatsapp" class="w-12">
-    </a>
+    <div
+            data-aos="zoom-in-left">
+        <a href="https://wa.me/" target="_blank">
+            <img src="/assets/images/icons/icon-whatsapp.png" alt="icon whatsapp" class="w-12">
+        </a>
+    </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11.2.5/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
 <script>
-  AOS.init();
+  AOS.init({
+    duration: 1000
+  });
 </script>
     <script>
       new Swiper('#skin_swiper', {

@@ -647,9 +647,6 @@ video {
 .bottom-0 {
   bottom: 0px;
 }
-.bottom-20 {
-  bottom: 5rem;
-}
 .bottom-4 {
   bottom: 1rem;
 }
@@ -661,12 +658,6 @@ video {
 }
 .top-0 {
   top: 0px;
-}
-.bottom-8 {
-  bottom: 2rem;
-}
-.right-8 {
-  right: 2rem;
 }
 .z-20 {
   z-index: 20;
@@ -719,20 +710,14 @@ video {
   width: 10rem;
   height: 10rem;
 }
-.h-8 {
-  height: 2rem;
+.h-9 {
+  height: 2.25rem;
 }
 .h-auto {
   height: auto;
 }
 .h-full {
   height: 100%;
-}
-.h-10 {
-  height: 2.5rem;
-}
-.h-9 {
-  height: 2.25rem;
 }
 .w-12 {
   width: 3rem;

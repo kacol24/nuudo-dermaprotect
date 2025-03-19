@@ -42,7 +42,7 @@
                     @foreach($page->skin_types as $skin)
                         <div class="swiper-slide p-2">
                             <div class="p-4 bg-gradient-to-b from-blue-100 to-white rounded-xl shadow-md text-center md:py-20"
-                                 data-aos="fade-left" data-aos-delay="{{ 100 * $loop->index }}">
+                                 data-aos="fade-left" data-aos-delay="{{ 300 * $loop->index }}">
                                 <img src="{{ $skin->image }}" alt="{{ $skin->title }}"
                                      class="size-40 md:size-60 mx-auto mb-4">
                                 <h2 class="text-lg font-bold md:text-2xl">
@@ -70,7 +70,7 @@
                 </div>
                 <img src="/assets/images/natural-ingredients.png" alt="" class="mx-auto mt-8" data-aos="fade-up">
             </div>
-            <img src="/assets/images/product-showcase.png" alt="" class="w-full">
+            <img src="/assets/images/product-showcase.png" alt="" class="w-full" data-aos="fade-down">
         </section>
     </div>
     <div style="background: url(/assets/images/bg-ripple.png) no-repeat center bottom;background-size: cover"
@@ -89,7 +89,7 @@
                                 <div class="relative mt-2 md:mt-4">
                                     <div class="absolute bottom-4 left-0 w-full h-full flex items-center justify-center">
                                         <div data-aos="fade-left"
-                                             data-aos-delay="{{ 100 * $loop->index }}">
+                                             data-aos-delay="{{ 300 * $loop->index }}">
                                             <img src="{{ $numberIcons[$loop->index] }}" alt=""
                                                  class="mx-auto w-auto h-full -translate-x-24 pt-10">
                                         </div>

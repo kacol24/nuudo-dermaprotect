@@ -27,12 +27,14 @@
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:gap-x-4 md:grid-cols-4 gap-y-8">
             <div class="col-span-1 text-center md:flex md:flex-row items-center md:gap-x-8"
-                 data-aos="fade-up">
+                 data-aos="fade-down"
+                 data-aos-offset="-100">
                 FOLLOW US
                 <div class="mt-2 flex flex-row justify-center gap-x-4 md:mt-0 md:gap-x-8">
                     @foreach($page->socials as $social)
                         <a href="{{ $social->url }}" class="w-6" target="_blank"
                            data-aos="fade-right"
+                           data-aos-offset="-100"
                            data-aos-delay="{{ 100 * $loop->index }}">
                             <img src="{{ $social->icon }}" alt="{{ $social->title }}"
                                  class="w-6 mx-auto">
@@ -61,14 +63,19 @@
     </div>
 </footer>
 <div class="fixed z-30 bottom-4 right-4">
-    <a href="https://wa.me/{{ $page->fab->wa }}" target="_blank" data-aos="zoom-in-left">
-        <img src="/assets/images/icons/icon-whatsapp.png" alt="icon whatsapp" class="w-12">
-    </a>
+    <div
+            data-aos="zoom-in-left">
+        <a href="https://wa.me/{{ $page->fab->wa }}" target="_blank">
+            <img src="/assets/images/icons/icon-whatsapp.png" alt="icon whatsapp" class="w-12">
+        </a>
+    </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11.2.5/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
 <script>
-  AOS.init();
+  AOS.init({
+    duration: 1000
+  });
 </script>
 @stack('after_scripts')
 </body>
