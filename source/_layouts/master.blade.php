@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="favicon.ico"/>
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png"/>
     <meta name="apple-mobile-web-app-title" content="Nuudo Dermaprotect"/>
-    <link rel="manifest" href="site.webmanifest"/>
+    <link rel="manifest" href="dermaprotect/site.webmanifest"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.2.5/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
     <link rel="stylesheet" href="../{{ mix('/css/main.css', 'assets/build') }}">
