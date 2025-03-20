@@ -22,7 +22,7 @@
 <header class="rounded-b-3xl bg-primary fixed top-0 z-20 w-full">
     <div class="container mx-auto px-4">
         <div class="flex py-4 items-center gap-x-4">
-            <img src="/assets/images/logo@2x.png" alt="" class="h-9 md:h-16" data-aos="fade-right">
+            <img src="assets/images/logo@2x.png" alt="" class="h-9 md:h-16" data-aos="fade-right">
             <div class="font-bold text-base md:text-2xl" data-aos="fade-right" data-aos-delay="100">
                 • For sensitive, dry, atopic skin
             </div>
@@ -73,7 +73,7 @@
     <div
             data-aos="zoom-in-left">
         <a href="{{ $page->fab->wa }}" target="_blank">
-            <img src="/assets/images/icons/icon-whatsapp.png" alt="icon whatsapp" class="w-12">
+            <img src="assets/images/icons/icon-whatsapp.png" alt="icon whatsapp" class="w-12">
         </a>
     </div>
 </div>
