@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
     <link rel="stylesheet" href="{{ mix('/css/main.css', 'assets/build') }}">
     @stack('after_styles')
+    <base href="{{ $page->baseUrl }}">
 </head>
 <body class="antialiased font-gotham-rounded text-body">
 <header class="rounded-b-3xl bg-primary fixed top-0 z-20 w-full">
