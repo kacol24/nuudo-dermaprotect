@@ -3,8 +3,8 @@
 return [
     'production'  => false,
     'baseUrl'     => '',
-    'title'       => 'Jigsaw',
-    'description' => 'Website description.',
+    'title'       => 'Nuudo Dermaprotect - For sensitive, dry, atopic skin | Nuudo',
+    'description' => 'Nuudo Dermaprotect provides skincare solutions for sensitive, dry, and atopic skin. Our 3-step regimen, featuring Gentle Cleanser, Body & Face Cream, and Barrier Balm, uses plant butter and oil to protect and repair the skin barrier. Ideal for eczema and dryness. Discover healthy skin with Nuudo.',
     'collections' => [],
     
     'fab' => [
