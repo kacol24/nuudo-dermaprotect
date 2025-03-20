@@ -111,7 +111,40 @@
                                     </div>
                                 </div>
                             </div>
-
+                        </div>
+                    @endforeach
+                    @foreach($page->steps as $step)
+                        <div class="swiper-slide p-2">
+                            <div class="p-6 rounded-xl text-center">
+                                <h3 class="text-xl md:text-2xl font-bold">Step {{ $loop->iteration }}</h3>
+                                <h2 class="text-lg md:text-3xl font-bold text-primary uppercase">
+                                    {{ $step->tag }}
+                                </h2>
+                                <div class="relative mt-2 md:mt-4">
+                                    <div class="absolute bottom-4 left-0 w-full h-full flex items-center justify-center">
+                                        <div data-aos="fade-left"
+                                             data-aos-delay="{{ 300 * $loop->index }}">
+                                            <img src="{{ $numberIcons[$loop->index] }}" alt=""
+                                                 class="mx-auto w-auto h-full -translate-x-24 pt-10">
+                                        </div>
+                                    </div>
+                                    <img src="{{ $step->image }}" alt="Gentle Cleanser"
+                                         class="relative w-40 h-auto mx-auto">
+                                </div>
+                                <p class="text-sm md:text-base mt-2 md:mt-4 font-gotham-book">
+                                    {!! nl2br($step->body) !!}
+                                </p>
+                                <div class="rounded-full border-primary border-4 bg-white flex items-center p-2 gap-x-2 mt-4 md:mt-6"
+                                     data-aos="flip-down" data-aos-delay="{{ 100 * $loop->index }}">
+                                    <img src="assets/images/icons/bulb-icon.png" alt="" class="w-20">
+                                    <div class="text-center flex-grow text-xs md:text-base">
+                                        <strong class="block text-sm md:text-xl">
+                                            TAHUKAH ANDA?
+                                        </strong>
+                                        {{ $step->faq }}
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     @endforeach
                 </div>
