@@ -14,7 +14,7 @@
     <link rel="manifest" href="site.webmanifest"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11.2.5/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.css">
-    <link rel="stylesheet" href="{{ mix('/css/main.css', 'assets/build') }}">
+    <link rel="stylesheet" href="../{{ mix('/css/main.css', 'assets/build') }}">
     @stack('after_styles')
     <base href="{{ $page->baseUrl }}">
 </head>
